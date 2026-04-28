@@ -1,6 +1,6 @@
 #! /bin/bash
 
-celist=$(cat sourcelist.txt | grep -v \#)
+celist=$(cat /files/sourcelist.txt | grep -v \#)
 
 for ce in $celist; do
     echo -n $ce": "
