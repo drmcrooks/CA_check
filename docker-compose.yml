@@ -1,8 +1,8 @@
 services:
 
-  alma10:
+  cacheck:
     build: .
-    container_name: alma10
-    hostname: alma10
+    container_name: cacheck
+    hostname: cacheck
     volumes:
       - ./files:/files/
