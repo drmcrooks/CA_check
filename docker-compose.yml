@@ -1,0 +1,8 @@
+services:
+
+  alma10:
+    build: .
+    container_name: alma10
+    hostname: alma10
+    volumes:
+      - ./files:/files/
