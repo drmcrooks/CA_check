@@ -2,9 +2,10 @@ FROM almalinux:10
 
 RUN dnf install -y openssl
 
-COPY ./files/ /files/
+COPY ./files/CA_check.sh /bin/
+COPY ./files/startup.sh /bin/
 
-RUN chmod +x /files/CA_check.sh
-RUN chmod +x /files/startup.sh
+RUN chmod +x /bin/CA_check.sh
+RUN chmod +x /bin/startup.sh
 
-CMD ["/files/startup.sh"]
+CMD ["/bin/startup.sh"]
